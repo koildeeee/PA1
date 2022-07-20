@@ -1,0 +1,11 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/k/kyledy/cs221/pa1-2021w2-20220130-2314'
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs221util/PNG.cpp
+ 
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs221util/HSLAPixel.cpp
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs221util/lodepng/lodepng.cpp
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic testimglist.cpp
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic imglist.cpp
+clang++ PNG.o HSLAPixel.o lodepng.o testimglist.o imglist.o -stdlib=libc++ -std=c++1y -lc++abi -lpthread -lm -o testimglist
+make: Leaving directory '/home/k/kyledy/cs221/pa1-2021w2-20220130-2314'
+ 
